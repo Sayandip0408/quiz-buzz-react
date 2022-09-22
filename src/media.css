@@ -1,0 +1,753 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif&display=swap');
+
+
+@media (max-width:1225px) {
+    #student_img {
+        height: calc(25vh - 40px);
+    }
+
+    #hero_text h1 {
+        font-size: 2.1rem;
+    }
+
+    .main_subjects {
+        height: 250px;
+    }
+
+    @keyframes temp {
+        from {
+            height: 40px;
+            width: 40%;
+        }
+
+        to {
+            height: 250px;
+            width: 100%;
+        }
+    }
+
+    .main_subjects h2 {
+        font-size: 1.2rem;
+    }
+
+    .main_subjects p {
+        font-size: 0.8rem;
+    }
+}
+
+@media (max-width:1080px) {
+    .main_subjects {
+        height: 200px;
+    }
+
+    @keyframes temp {
+        from {
+            height: 70px;
+            width: 40%;
+        }
+
+        to {
+            height: 200px;
+            width: 100%;
+        }
+    }
+
+    .main_subjects img {
+        height: 130px;
+        width: 130px;
+    }
+
+    #student_img {
+        height: calc(25vh - 120px);
+    }
+
+}
+
+@media (max-width:995px) {
+    #student_img {
+        height: calc(25vh - 60px);
+    }
+
+    #nav_btn_div {
+        width: 40vw;
+        height: 80%;
+    }
+
+    #home,
+    #dev,
+    #subjects {
+        height: 75%;
+        width: 32%;
+        font-size: 0.9rem;
+    }
+
+    .main_subjects img {
+        height: 110px;
+        width: 110px;
+    }
+}
+
+@media (max-width:900px) {
+    #student_img {
+        height: calc(25vh - 60px);
+    }
+
+    #nav_btn_div {
+        width: 40vw;
+        height: 80%;
+    }
+
+    #home,
+    #dev,
+    #subjects {
+        height: 75%;
+        width: 32%;
+        font-size: 0.9rem;
+    }
+
+    .main_subjects img {
+        height: 110px;
+        width: 110px;
+    }
+
+    .main_subjects_div {
+        width: 200px;
+    }
+
+    #short_ul {
+        display: none;
+    }
+}
+
+@media (max-width:850px) {
+    #nav_btn_div {
+        display: none;
+    }
+
+    #short_ul {
+        position: absolute;
+        background-color: #4e42aa;
+        background-color: #6a5be2;
+        /* background-color: #f6e58d; */
+        height: calc(100vh - 50px);
+        width: 100%;
+        top: 50px;
+        left: 0;
+        z-index: 2;
+        flex-direction: column;
+        /* background-color: #f9ca24; */
+    }
+
+    #short_navlink {
+        /* border: 1px solid black; */
+        height: 50%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+
+    #social_link {
+        /* border-top: 2px solid #4e42aa; */
+        height: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        background-color: #dff9fb;
+        background-color: #4e42aa;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+    }
+
+    #short_navlink li {
+        list-style: none;
+        /* border: 1px solid black; */
+        height: 50px;
+    }
+
+    #short_navlink li .nav_short {
+        color: black;
+        color: #dff9fb;
+        text-decoration: none;
+        font-size: 1.5rem;
+        padding: 10px;
+        display: inline-block;
+        animation: nav_ani 0.5s;
+    }
+
+    @keyframes nav_ani {
+        from {
+            font-size: 0.5rem;
+        }
+
+        to {
+            font-size: 1.5rem;
+        }
+    }
+
+    #short_navlink li .nav_short::after {
+        content: '';
+        width: 0px;
+        height: 2px;
+        display: block;
+        background: #dff9fb;
+        transition: 300ms;
+    }
+
+    #short_navlink li .nav_short:hover::after {
+        width: 100%;
+    }
+
+    #social_link li {
+        list-style: none;
+        /* border: 1px solid black; */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100px;
+        width: 100px;
+        /* border-radius: 50%; */
+        color: #dff9fb;
+    }
+
+    #social_link li a {
+        font-size: 2rem;
+        animation: nav_soc_icon 0.5s;
+        color: #dff9fb;
+    }
+
+    @keyframes nav_soc_icon {
+        from {
+            font-size: 0.5rem;
+        }
+
+        to {
+            font-size: 2rem;
+        }
+    }
+
+    @keyframes nav_soc_p {
+        from {
+            font-size: 0.5rem;
+        }
+
+        to {
+            font-size: 1rem;
+        }
+    }
+
+    #social_link li p {
+        font-size: 1rem;
+        font-family: 'Noto Serif', serif;
+        animation: nav_soc_p 0.5s;
+    }
+
+    #short_nav_btn {
+        display: block;
+        height: 30px;
+        width: 40px;
+        border: none;
+        color: white;
+        border-radius: 2px;
+        cursor: pointer;
+    }
+
+    #short_nav_cross {
+        display: none;
+        height: 23px;
+        width: 35px;
+        border: none;
+        color: white;
+        border-radius: 2px;
+        cursor: pointer;
+    }
+
+    #student_img {
+        height: calc(25vh - 100px);
+    }
+
+    #hero_text h1 {
+        font-size: 1.7rem;
+    }
+
+    #hero_text h2 {
+        font-size: 1.2rem;
+    }
+
+    #hero_text p {
+        font-size: 0.8rem;
+    }
+
+    #main {
+        /* grid-template-columns: repeat(1, 1fr); */
+        display: block;
+    }
+
+    .main_subjects {
+        height: 200px;
+        margin: auto;
+        margin-bottom: 20px;
+    }
+
+    .main_subjects img {
+        height: 130px;
+        width: 130px;
+    }
+
+    .main_subjects_div {
+        width: 300px;
+    }
+
+    @keyframes temp {
+        from {
+            height: 40px;
+            width: 40%;
+        }
+
+        to {
+            height: 200px;
+            width: 100%;
+        }
+    }
+
+    .main_subjects h2 {
+        font-size: 1.2rem;
+    }
+
+    .main_subjects p {
+        font-size: 0.8rem;
+    }
+
+    #question_div {
+        width: 98%;
+        /* margin: auto; */
+    }
+
+    #about_div p {
+        width: 500px;
+    }
+
+    #pro_used {
+        width: 500px;
+        height: 150px;
+        margin-top: 50px;
+    }
+}
+
+@media (max-width:710px) {
+    #contact_sec h1 {
+        font-size: 2rem;
+        margin-top: 50px;
+    }
+
+    #contact_sec h2 {
+        font-size: 1.5rem;
+    }
+
+    #contact_form input {
+        width: 500px;
+    }
+
+    #contact_form textarea {
+        width: 500px;
+    }
+}
+
+@media (max-width:670px) {
+    #logo {
+        width: 45vw;
+    }
+
+    #hero {
+        flex-direction: column;
+        margin-top: 50px;
+        /* border: 1px solid white; */
+    }
+
+    #student_img {
+        height: calc(25vh - 130px);
+        width: 180px;
+    }
+
+    #hero_text h1 {
+        font-size: 1.7rem;
+        text-align: center;
+    }
+
+    #hero_text h2 {
+        font-size: 1.2rem;
+        text-align: center;
+
+    }
+
+    #hero_text p {
+        font-size: 0.8rem;
+        text-align: center;
+    }
+
+    #main {
+        padding: 20px 20px;
+        height: 60vh;
+    }
+
+    .main_subjects {
+        border-radius: 30px;
+    }
+}
+
+@media (max-width:630px) {
+    #question {
+        font-size: 1rem;
+    }
+
+    #question_div {
+        height: 215px;
+    }
+
+    #question_div ul li {
+        margin: 5px;
+    }
+
+    #question_div ul li label {
+        font-size: 0.8rem;
+        font-weight: bold;
+    }
+
+    .save {
+        font-size: 0.9rem;
+    }
+
+    #sub_heading {
+        font-size: 2rem;
+    }
+
+    #hide_1,
+    #hide_2,
+    #hide_3,
+    #hide_4,
+    #hide_5,
+    #hide_6,
+    #hide_7,
+    #hide_8,
+    #hide_9,
+    #hide_10 {
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width:575px) {
+    #about_div p {
+        width: 350px;
+        font-size: 1.2rem;
+    }
+
+    #pro_used {
+        width: 350px;
+        height: 100px;
+    }
+}
+
+@media (max-width:530px) {
+    #nav #logo {
+        width: 40vw;
+    }
+}
+
+@media (max-width:542px) {
+    #contact_sec h1 {
+        font-size: 2rem;
+        margin-top: 50px;
+    }
+
+    #contact_sec h2 {
+        font-size: 1.1rem;
+    }
+
+    #contact_form {
+        height: 70vh;
+    }
+
+    #contact_form input {
+        width: 400px;
+    }
+
+    #contact_form textarea {
+        width: 400px;
+    }
+}
+
+@media (max-width:510px) {
+    .main_subjects {
+        height: 150px;
+    }
+
+    @keyframes temp {
+        from {
+            height: 40px;
+            width: 40%;
+        }
+
+        to {
+            height: 150px;
+            width: 100%;
+        }
+    }
+
+    .main_subjects img {
+        height: 100px;
+        width: 100px;
+    }
+
+    .main_subjects_div {
+        width: 220px;
+    }
+
+    .guidelines {
+        text-align: justify;
+        /* margin: 5px; */
+    }
+}
+
+@media (max-width:450px) {
+    .main_subjects img {
+        height: 80px;
+        width: 80px;
+    }
+
+    .main_subjects h2 {
+        font-size: 1rem;
+    }
+
+    .main_subjects p {
+        font-size: 0.8rem;
+    }
+
+    .main_subjects_btn {
+        width: fit-content;
+        font-size: smaller;
+    }
+
+    #question_div {
+        height: 225px;
+    }
+
+    #question_div ul li label {
+        font-size: 0.7rem;
+    }
+
+    #about_page h1 {
+        font-size: 2rem;
+    }
+
+    #result_sec {
+        height: 80vh;
+        width: 80vw;
+    }
+
+    #about_div p {
+        width: 350px;
+        font-size: 1rem;
+    }
+}
+
+@media (max-width:430px) {
+    #logo {
+        width: 55vw;
+    }
+
+    #hero {
+        margin-top: 80px;
+    }
+
+    #student_img {
+        height: calc(25vh - 100px);
+    }
+
+    #main {
+        height: 55vh;
+    }
+
+    #question_container {
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+
+    #question {
+        margin-right: 5px;
+    }
+
+    #sub_heading {
+        font-size: 1.6rem;
+    }
+
+    .save {
+        width: 80px;
+    }
+
+    #contact_sec h2 {
+        font-size: 0.9rem;
+        text-shadow: 0px 3px 2px #192a32;
+    }
+
+    #contact_form input {
+        width: 350px;
+    }
+
+    #contact_form textarea {
+        width: 350px;
+    }
+
+    #send_msg {
+        width: 150px;
+    }
+}
+
+@media (max-width:390px) {
+    #nav #logo {
+        width: 45vw;
+    }
+
+    #student_img {
+        height: calc(25vh - 130px);
+        width: 130px;
+    }
+
+    .main_subjects {
+        height: 100px;
+        border-radius: 15px;
+    }
+
+    @keyframes temp {
+        from {
+            height: 40px;
+            width: 40%;
+        }
+
+        to {
+            height: 100px;
+            width: 100%;
+        }
+    }
+
+    .main_subjects img {
+        height: 75px;
+        width: 75px;
+    }
+
+    .main_subjects_div {
+        width: 200px;
+    }
+
+    .main_subjects h2 {
+        font-size: 0.9rem;
+    }
+
+    .main_subjects p {
+        font-size: 0.7rem;
+    }
+
+    .main_subjects button {
+        height: 25px;
+        width: 80px;
+        font-size: 0.7rem;
+        font-weight: bold;
+    }
+
+    #question_div ul li {
+        margin: 5px;
+        padding-left: 5px;
+    }
+}
+
+@media (max-width:375px) {
+    #hero {
+        margin-top: 100px;
+    }
+
+    #student_img {
+        height: calc(25vh - 50px);
+        width: 130px;
+    }
+
+    #main {
+        height: 45vh;
+    }
+
+    #question_div {
+        height: 215px;
+    }
+
+    #question {
+        font-size: 0.9rem;
+    }
+
+    #question_div ul li {
+        margin: 2px;
+        list-style: none;
+        padding-left: 2px;
+    }
+
+    #contact_form input {
+        width: 300px;
+    }
+
+    #contact_form textarea {
+        width: 300px;
+    }
+
+    #send_msg {
+        width: 130px;
+    }
+
+    #about_page h1 {
+        font-size: 1.8rem;
+    }
+
+    #about_div p {
+        padding-left: 5px;
+        padding-right: 5px;
+        margin-top: 15px;
+    }
+}
+
+@media (max-width:360px) {
+    .save {
+        height: 25px;
+    }
+}
+
+@media (max-width:330px) {
+    #logo {
+        width: 65vw;
+    }
+
+    #hero {
+        margin-top: 90px;
+    }
+
+    #hero h1 {
+        font-size: 1.5rem;
+    }
+
+    #hero h2 {
+        font-size: 0.9rem;
+    }
+
+    #hero p {
+        font-size: 0.5rem;
+    }
+
+    #student_img {
+        height: calc(25vh - 50px);
+        width: 130px;
+    }
+
+    #main {
+        height: 45vh;
+    }
+
+    .main_subjects_div {
+        width: 170px;
+    }
+}
